@@ -1,0 +1,3 @@
+- Use auto-scaling groups
+- Stateless services preferred
+- Logging must be enabled
