@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+streamlit
+langchain
+langgraph
+chromadb
+pydantic
+groq
+tiktoken 
+python-multipart
