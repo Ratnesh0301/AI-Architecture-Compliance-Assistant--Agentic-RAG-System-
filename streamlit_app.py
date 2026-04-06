@@ -10,5 +10,9 @@ if uploaded_file:
         files = {"file": uploaded_file.getvalue()}
         response = requests.post("http://localhost:8000/analyze/", files=files)
 
-        st.subheader("📊 Compliance Report")
-        st.write(response.json()["report"])
+        if response.status_code == 200:
+            st.subheader("📊 Compliance Report")
+            st.write(response.json()["report"])
+        else:
+            st.error(f"Backend Error: {response.status_code}")
+            st.write(response.text)
