@@ -1,0 +1,3 @@
+The system uses HTTP APIs without authentication.
+Database credentials are hardcoded.
+No logging system present.
